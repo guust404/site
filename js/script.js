@@ -1,10 +1,10 @@
 const countdownElement = document.getElementById('countdown');
 
-// Função para calcular o tempo restante de 4 horas
+// Função para calcular o tempo restante até a meia-noite
 function calculateEndTime() {
     const now = new Date();
-    const fourHoursFromNow = new Date(now.getTime() + 4 * 60 * 60 * 1000); // 4 horas em milissegundos
-    return fourHoursFromNow.getTime();
+    const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0);
+    return tomorrow.getTime();
 }
 
 let endTime = localStorage.getItem('offerEndTime');
