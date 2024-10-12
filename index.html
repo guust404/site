@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Produto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header com Contador -->
+    <header class="header">
+        <div class="container">
+            <p class="limited-offer">PROMOÇÃO! TERMINA EM: <span id="countdown"></span></p>
+        </div>
+    </header>
+
+    <!-- Seção do produto com resumo e VSL -->
+    <section class="hero">
+        <div class="container">
+            <div class="content">
+                <div class="product-summary">
+                    <h1>Descubra o Melhor Produto do Mercado!</h1>
+                    <p>
+                        Transforme sua rotina com nosso incrível produto. Tenha mais eficiência, economize tempo e
+                        atinja seus objetivos com facilidade. Confira agora como você pode melhorar a sua vida.
+                    </p>
+                    <ul>
+                        <li>Solução prática e acessível</li>
+                        <li>Resultados garantidos</li>
+                        <li>Oferta especial por tempo limitado</li>
+                    </ul>
+                </div>
+                <div class="vsl-video">
+                    <h2 style="text-align: center; margin-bottom: 10px;">Veja como nosso produto pode transformar sua
+                        vida!</h2>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_ID" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+                <a href="#compra" class="cta-button" id="first-button-cpa">Comprar Agora!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Perguntas Comuns -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Perguntas Comuns</h2>
+            <div class="faq">
+                <div class="faq-item">
+                    <h3>Qual é a garantia do produto?</h3>
+                    <p>Oferecemos uma garantia de 30 dias, caso você não esteja satisfeito com o produto.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>O produto é fácil de usar?</h3>
+                    <p>Sim! O produto vem com um manual simples e instruções fáceis de seguir.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Como funciona o processo de entrega?</h3>
+                    <p>Após a confirmação do pagamento, o produto será enviado em até 24 horas e você receberá um código
+                        de rastreamento.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Posso trocar o produto?</h3>
+                    <p>Sim, aceitamos trocas dentro do prazo da garantia, contanto que o produto esteja em boas
+                        condições.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Avaliações dos Usuários com Carrossel -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2>Veja o que nossos clientes estão dizendo</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="review-card">
+                        <img src="/images/user.jpg" alt="Avatar do Cliente" class="avatar">
+                        <h3>Lucas Fernandes</h3>
+                        <div class="stars">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>“Produto excelente! Superou todas as minhas expectativas. Recomendo!”</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="/images/user.jpg" alt="Avatar do Cliente" class="avatar">
+                        <h3>Ana Costa</h3>
+                        <div class="stars">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>“Simplesmente incrível. O atendimento também é de primeira. Estou muito satisfeito!”</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="/images/user.jpg" alt="Avatar do Cliente" class="avatar">
+                        <h3>Carlos Pereira</h3>
+                        <div class="stars">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>“Comprei com desconto e adorei. Vale muito a pena!”</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="/images/user.jpg" alt="Avatar do Cliente" class="avatar">
+                        <h3>Mariana Silva</h3>
+                        <div class="stars">
+                            <span>⭐⭐⭐⭐</span>
+                        </div>
+                        <p>“O produto é muito bom, mas o envio demorou um pouco.”</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="/images/user.jpg" alt="Avatar do Cliente" class="avatar">
+                        <h3>João Oliveira</h3>
+                        <div class="stars">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>“Gostei bastante! Recomendo para todos.”</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="/images/user.jpg" alt="Avatar do Cliente" class="avatar">
+                        <h3>Fernanda Lima</h3>
+                        <div class="stars">
+                            <span>⭐⭐⭐⭐</span>
+                        </div>
+                        <p>“Bom produto, mas poderia ter mais opções de cores.”</p>
+                    </div>
+                </div>
+                <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de promoção com imagem do produto -->
+    <section class="promo-section">
+        <div class="container">
+            <div class="promo-content">
+                <div class="promo-image">
+                    <img src="images/book.jpeg" alt="Imagem do Produto">
+                </div>
+                <div class="promo-details">
+                    <h2>Promoção Imperdível!</h2>
+                    <p>Aproveite 50% de desconto por tempo limitado! Não perca essa chance de ter o produto que vai
+                        revolucionar o seu dia a dia.</p>
+                    <ul>
+                        <li><strong>Preço original:</strong> R$ 299,90</li>
+                        <li><strong>Preço com desconto:</strong> R$ 149,90</li>
+                        <li><strong>Frete grátis para todo o Brasil!</strong></li>
+                    </ul>
+                    <br>
+                    <a href="#compra" class="cta-button">Comprar Agora!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Call to Action -->
+    <section id="compra" class="cta-section">
+        <div class="container">
+            <h2>Aproveite a oferta especial!</h2>
+            <p>Oferta válida por tempo limitado. Garanta agora mesmo!</p>
+            <br>
+            <a href="#" class="cta-button">Comprar Agora!</a>
+        </div>
+    </section>
+
+    <!-- Rodapé Simples -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Seu Negócio. Todos os direitos reservados.</p>
+            <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
